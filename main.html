@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Navigation Bar with ARIA role -->
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#skills">Skills</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Heading with ARIA role -->
+    <header>
+        <h1 role="heading" aria-level="1">My Accessible Portfolio</h1>
+    </header>
+
+    <!-- Profile Image with ARIA role and alt attribute -->
+    <section id="about">
+        <img role="img" src="profile.jpg" alt="Photo of [Your Name]" width="200" height="200">
+        <p>Hello! I'm [Your Name], a web developer passionate about building accessible and user-friendly websites.</p>
+    </section>
+
+    <!-- Skills Section with List and List Item ARIA roles -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul role="list">
+            <li role="listitem">HTML & CSS</li>
+            <li role="listitem">JavaScript</li>
+            <li role="listitem">Web Accessibility</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul role="list">
+            <li role="listitem"><a href="#">Project 1: Portfolio Website</a></li>
+            <li role="listitem"><a href="#">Project 2: E-commerce Platform</a></li>
+            <li role="listitem"><a href="#">Project 3: Blogging Platform</a></li>
+        </ul>
+    </section>
 
 </body>
 
